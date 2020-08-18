@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cresta Design.</title>
+  <title>DIGSMILE INC.</title>
+
+  <!-- description -->
+  <meta name="description" content="">
 
   <!-- Favicons -->
   <link rel="icon" href="">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,300,700,900">
 
-  <!-- Main Stylesheet File -->
-  <link rel="stylesheet" href="./css/sanitize.css"> <!-- cssリセット -->
+  <!-- reset css -->
+  <link rel="stylesheet" href="./css/modern-css-reset.css">
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="./css/style.css">
 
   <!-- jQuery -->
@@ -21,142 +24,140 @@
 </head>
 <body>
 
+  <!-- header -->
   <header>
-    <nav>
-      <div class="logo"><a href="">クリ★スタ</a></div>
-      <div class="btn-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="layer"></div>
+    <div class="header-inner">
+      <div class="site-title">
+        <a href="./index.html"><img class="site-title-img" src="./img/site-logo@2x.png" alt="" /></a>
       </div>
-      <ul class="header-nav-pc">
-        <li><a href="#About">About</a></li>
-        <li><a href="#Service">Service</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- spナビ -->
-    <nav class="nav-sp">
-      <ul class="header-nav-sp">
-        <li><a href="#About">About</a></li>
-        <li><a href="#Service">Service</a></li>
-        <li><a href="#News">News</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main>
-    <div class="container bg">
-      <p class="bg-title">Cresta.Design</p>
+      <div class="burger-btn">
+        <div class="btn-trigger" id="btn01">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-logo">menu</div>
+      </div>
+      <nav class="header-nav">
+        <div class="nav-icon">
+          <a href="./index.html"><img src="./img/burger-menu-logo@2.png" alt="" /></a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="./about.html">about us</a></li>
+          <li class="nav-list-item"><a href="./">works</a></li>
+          <li class="nav-list-item"><a href="./">culture</a> </li>
+          <li class="nav-list-item"><a href="./">topics</a></li>
+          <li class="nav-list-item"><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+  <!-- //header -->
 
-    <section id="About">
-      <div class="container">
-        <div class="wrapper">
-          <h1 class="title center">About</h1>
-          <h2>ミニマルで<br>
-          洗練されたデザインを。</h2>
-          <p>近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
+  <!-- main -->
+  <main>
+    <!-- first view -->
+    <section class="fv">
+      <div class="fv-inner">
+        <div class="fv-img"></div>
+        <div class="fv-catch-copy">
+          <p class="sub-copy">デザインで人を笑顔にする会社</p>
+          <p class="sub-copy sub-copy2">digsmile inc.</p>
+          <h1 class="main-copy">design<br>
+              for<br>
+              smile.
+          </h1>
         </div>
+        <div class="fv-bg"></div>
       </div>
     </section>
+    <!-- //first view -->
 
-    <section id="Service">
+    <!-- about -->
+    <section class="about">
+      <div class="wrapper">
+
+        <div class="about-container">
+          <div class="about-us">
+            <div class="about-inner">
+              <h2 class="title">about us</h2>
+              <p>digsmileは、デザインで人を笑顔にする会社。<br>
+              なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>
+              digsmileの社名にはそんな想いが込められています。</p>
+              <a href="./about.html"><button class="about-btn">read more</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
-        <div class="wrapper">
-          <h1 class="title center">Service</h1>
+        <div class="wrapper content-wrapper">
           <div class="contents flex">
-            <div class="img-l"><img src="./img/service-image@2x.jpg" alt=""></div>
-            <div class="sentence-r">
-              <h2>リリース時のサポートで<br>
-                サービスのブランディングを</h2>
-                <p>弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+            <div class="content">
+              <h2 class="title">works</h2>
+              <img src="./img/card-works@2x.jpg" alt="">
+              <p>digsmileの制作実績を紹介します。</p>
+              <a href="#"><button>read more</button></a>
+            </div>
+            <div class="content">
+              <h2 class="title">culture</h2>
+              <img src="./img/card-culture@2x.jpg" alt="">
+              <p>digsmileの社内文化について紹介します。</p>
+              <a href="#"><button>read more</button></a>
             </div>
           </div>
-          <div class="contents flex">
-            <div class="sentence-l">
-              <h2>リリース後のサポートで<br>
-                効果を最大化させる</h2>
-                <p>弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
-              </div>
-              <div class="img-r"><img src="./img/service-image02@2x.jpg" alt=""></div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <section id="News">
-      <div class="container">
-        <div class="wrapper">
-          <h1 class="title center">News</h1>
-          <div class="cards flex">
-            <div class="card">
-              <img src="./img/card-image1@2x.jpg" alt="">
-              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-            </div>
-            <div class="card">
-              <img src="./img/card-image2@2x.jpg" alt="">
-              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-            </div>
-            <div class="card">
-              <img src="./img/card-image3@2x.jpg" alt="">
-              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-            </div>
+      </div>
+    </section>
+    <!-- //about -->
+
+    <!-- topics -->
+    <section class="topics">
+      <div class="topics-wrapper">
+          <h2 class="title">latest topics</h2>
+          <div class="topics-contents">
+            <ul class="topics-list">
+              <li class="topics-date">2020.02.01</li>
+              <a href="#"><li class="list-item">イベントレポート「vrクリエイター座談会 〜5gの次に来るもの〜」</li></a>
+              <li class="topics-date">2020.01.18</li>
+              <a href="#"><li class="list-item">プレスリリースのお知らせ diggin’ records</li></a>
+              <li class="topics-date">2020.01.01</li>
+              <a href="#"><li class="list-item">新年明けましておめでとうございます</li><a href="#"></a>
+            </ul>
+            <a href="#" class="topics-btn"><button>read more</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- //topics -->
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="wrapper">
+        <div class="contact-contents flex">
+          <div class="contact-content">
+            <h2 class="title">contact</h2>
+            <p>制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>
+              まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+            <a href="./contact.html"><button>read more</button></a>
+          </div>
+          <div class="contact-img">
+            <img src="./img/home-contact@2x.jpg" alt="">
           </div>
         </div>
       </div>
     </section>
-    
-    <section id="Contact">
-      <div class="container">
-        <div class="wrapper">
-          <h1 class="title center">お問い合わせ</h1>
-          <form action="">
-            <p>担当者名</p>
-            <input type="text" name="name" value="">
-            <p>電話番号</p>
-            <input type="text" name="tel" value="">
-            <p>メールアドレス</p>
-            <input type="text" name="email" value="">
-            <p>お問い合わせ内容</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea><br>
-            <button type="submit">送信</button>
-          </form>
-        </div>
-      </div>
-    </section>
+    <!-- //CONTACT -->
+
   </main>
+  <!-- //main -->
 
   <footer>
-    <p>©︎crest.design all rights reserved</p>
+    <small>©2018 digsmile INC.</small>
   </footer>
-  
 
-  <script>
-    $(function(){
-      $('.btn-trigger').on('click', function() {
-        $(this).toggleClass('active');
-        // $('.nav-sp').next().slideToggle();
-        // return false;
-      });
-      $(document).ready(function(){
-        $(".btn-trigger").click(function () {
-          $('.nav-sp').fadeToggle(500);
-          $('body').toggleClass('noscroll');//bodyにnoscrollクラスを付与(スクロールを固定)
-        });
-      });
-      if( $(window).width() < 768 ){//デバイスの幅が768以下のとき
-        $('.header-nav-sp>li>a').on('click',function(){//.header-nav-sp>li>aをクリックすると
-        $('.nav-sp').fadeOut(500);//.nav-spが0.5秒でフェードアウト(メニューのフェードアウト)
-        $('.btn-trigger').removeClass('active');//.btn_triggerのactiveクラスを削除
-        $('body').removeClass('noscroll');//bodyのnoscrollクラスを削除
-      });
-    };
-  });
-  </script>
+  <script type="text/javascript" src="./js/index.js"></script>
+
 </body>
-
 </html>
