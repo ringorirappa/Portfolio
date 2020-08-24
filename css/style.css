@@ -66,6 +66,9 @@ a:visited {
   padding: 0 50px;
   margin: 0 auto;
 }
+.border {
+  border: 1px solid rgba(51, 51, 51, .1);
+}
 
 @media screen and (max-width:549px) {
   .title {
@@ -335,8 +338,22 @@ nav ul a:hover:after {
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
 }
+.site .site-flr p .point {
+  width: 60px;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #007BC7;
+  color: #FFF;
+  border: 1px solid #007BC7;
+  border-radius: 5px;
+  padding: 1px;
+  margin-bottom: 6px;
+}
 .site .site-flr .sentence {
   margin-top: 50px;
+  line-height: 3rem;
 }
 .site .site-flr .site-url-pc {
   text-decoration: underline;
@@ -636,9 +653,13 @@ small {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 100px;
     background: #fefefe;
     box-shadow: 0 -3px 3px -3px rgba(0, 0, 0, 0.2);
     transition: .3s;
+  }
+  .footer-nav ul {
+    padding-top: 20px;
   }
   .footer-nav ul li a {
     transition: .5s;
@@ -649,7 +670,7 @@ small {
   .copy-right-sp {
     display: block;
     font-size: 1.2rem;
-    margin-bottom: 55px;
+    margin-bottom: 100px;
   }
 }
 
