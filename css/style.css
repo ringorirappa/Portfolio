@@ -544,9 +544,30 @@ nav ul a:hover:after {
   letter-spacing: 0.2rem;
   margin-top: 80px;
   line-height: 6rem;
+  margin-bottom: 0;
+}
+#contact p::before {
+  content: '＼';
+  margin-right: 10px;
+}
+#contact p::after {
+  content: '／';
+  margin-left: 10px;
 }
 #contact p a {
   text-decoration: underline;
+}
+.email {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  background-color: #007BC7;
+  color: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 4rem;
 }
 
 @media (max-width: 769px) {
