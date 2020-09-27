@@ -213,16 +213,42 @@ nav ul a:hover:after {
   justify-content: space-between;
   margin: 0 auto;
 }
-.prof_img {
+.pro-fll {
   flex: 1;
   text-align: center;
   margin-right: 5%;
 }
+/* .prof_img {
+} */
 .prof_img img {
   border-radius: 50%;
   width: 100%;
   max-width: 300px;
   margin-top: 50px;
+}
+.blog-sp {
+  display: none;
+}
+.blog {
+  text-align: center;
+  margin: 470px auto 0;
+  width: 60%;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: #fefefe;
+}
+.blog img {
+  width: 150px;
+}
+.blog-content a {
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+.blog-content p {
+  font-size: 1.4rem;
 }
 .profile .prof-flr {
   flex: 1;
@@ -273,12 +299,22 @@ nav ul a:hover:after {
     flex-direction: column;
     margin: 0 auto;
   }
-  .prof_img {
+  .blog-pc {
+    display: none;
+  }
+  .blog-sp {
+    display: block;
+    margin: 50px auto 100px;
+  }
+  .pro-fll {
     margin: 0 0 50px;
   }
   .prof_img img {
     width: 100%;
     max-width: 200px;
+  }
+  .blog img {
+    width: 100px;
   }
   .profile .prof-flr {
     text-align: center;
@@ -307,6 +343,12 @@ nav ul a:hover:after {
 }
 /* sp-view */
 @media screen and (max-width:375px) {
+  .blog {
+    width: 100%;
+  }
+  .blog img {
+    width: 100px;
+  }
   .profile .prof-flr h1 {
     font-size: 3.2rem;
   }
@@ -315,6 +357,12 @@ nav ul a:hover:after {
   }
   .profile .prof-flr .sentence {
     margin-top: 50px;
+    font-size: 1.4rem;
+    letter-spacing: .13em;
+  }
+  .profile .prof-flr .self-pr {
+    font-size: 1.4rem;
+    letter-spacing: .13em;
   }
 }
 /* // About */
@@ -402,7 +450,6 @@ nav ul a:hover:after {
   .site .site-flr p {
     text-align: left;
     font-size: 1.6rem;
-    line-height: 2.2rem;
   }
   .site-title-sp {
     display: block;
@@ -432,6 +479,9 @@ nav ul a:hover:after {
   .site-url-sp a {
     text-align-last: left;
     font-size: 1.2rem;
+  }
+  .site .site-flr p {
+    font-size: 1.4rem;
   }
   .br-sp {
     display: block;
@@ -569,6 +619,9 @@ nav ul a:hover:after {
   font-size: 1.6rem;
   line-height: 4rem;
 }
+.br-sp {
+  display: none;
+}
 
 @media (max-width: 769px) {
   #contact {
@@ -578,7 +631,7 @@ nav ul a:hover:after {
     padding: 0;
   }
   #contact p {
-    font-size: 16px;
+    font-size: 1.4rem;
     line-height: 4rem;
     letter-spacing: 0.2rem;
   }
@@ -597,7 +650,17 @@ nav ul a:hover:after {
   #contact .flex li {
     width: 33.3%;
     padding: 0;
+  }
 }
+
+@media (max-width: 375px) {
+  .br-sp {
+    display: block;
+  }
+  #contact p::before,
+  #contact p::after {
+    content: '';
+  }
 }
 
 /* // Contact */
